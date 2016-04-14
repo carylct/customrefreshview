@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.administrator.customrefreshview.MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="155dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <Chronometer
+
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/dialerFilter"
+        android:layout_alignRight="@+id/dialerFilter"
+        android:layout_below="@+id/editText"
+        android:layout_marginEnd="58dp"
+        android:layout_marginRight="58dp"
+        android:layout_marginTop="88dp" />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_alignBottom="@+id/chronometer"
+        android:layout_toLeftOf="@+id/chronometer"
+        android:layout_toStartOf="@+id/chronometer" />
+
+    <DialerFilter
+        android:id="@+id/dialerFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="67dp">
+
+        <EditText
+            android:id="@android:id/hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hint" />
+
+        <EditText
+            android:id="@android:id/primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@android:id/hint"
+            android:text="Primary" />
+    </DialerFilter>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_alignStart="@+id/editText3"
+        android:layout_below="@+id/space"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText2"
+        android:layout_toLeftOf="@+id/space"
+        android:layout_toStartOf="@+id/space"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/space"
+        android:layout_alignRight="@+id/space"
+        android:layout_below="@+id/textView2"
+        android:text="New ToggleButton" />
+
+</RelativeLayout>
